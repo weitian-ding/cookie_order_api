@@ -10,7 +10,7 @@ end
 remaining_cookies = 0   # assuming remaining cookies in one page cannot be used for another page
 unfulfilled_orders = []
 
-for page in 1..11
+for page in 1..11  # there are 11 pages in total
   # make api request and get the response
   url = "https://backend-challenge-fall-2017.herokuapp.com/orders.json?page=#{page}"
   uri = URI(url)
